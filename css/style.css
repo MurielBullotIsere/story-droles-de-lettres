@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #222;
+}
+
+.story-list {
+  list-style: none;
+  padding: 0;
+}
+
+.story-card {
+  border: 2px solid #208b2e;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.story-author {
+  color: #666;
+  font-size: 0.9rem;
+}
