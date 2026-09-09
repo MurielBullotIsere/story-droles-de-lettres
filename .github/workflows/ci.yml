@@ -26,4 +26,14 @@ jobs:
         run: echo "Ceci est mon deuxième message dans les logs."
 
       - name: Afficher un troisième message
-        run: echo "Et voici mon troisième message."      
+        run: echo "Et voici mon troisième message."
+  
+  verification-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+      
+      - name: Vérifier que le fichier existe
+        run: test -f index.html
+        
