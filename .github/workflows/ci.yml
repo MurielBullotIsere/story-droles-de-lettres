@@ -21,3 +21,6 @@ jobs:
     steps:
       - name: Afficher un message
         run: echo "La pipeline Github Actions fonctionne correctement !"  # echo est une commande bash qui affiche un message dans les logs.
+
+      - name: Afficher un second message
+        run: echo "LCeci est mon deuxième message dans les logs."  # echo est une commande bash qui affiche un message dans les logs.        
