@@ -37,5 +37,5 @@ jobs:
       - name: Vérifier que le fichier HTML existe
         run: test -f index.html
         
-      - name: Vérifier que le fichier bidule existe
-        run: test -f bidule.html        
+      - name: Vérifier qu'un titre de niveau 1 est présent dans le fichier HTML
+        run: grep -q "<h1>" index.html 
