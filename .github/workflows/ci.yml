@@ -1,0 +1,23 @@
+# Donne le nom du workflow qui sera visible dans l’onglet Actions de GitHub.
+name: Verification de story-droles-de-lettres
+
+# Définit les événements qui déclenchent le workflow. 
+on:
+  # Le workflow sera déclenché lorsqu’une pull request est ouverte. 
+  pull_request:
+  # Le workflow sera déclenché lorsqu’un push est effectué sur la branche main.
+  push:
+    branches: 
+      - main
+
+# Donne la liste des jobs à effectuer.
+jobs:
+  # Crée un job nommé mon-premier-job-de-test.
+  mon-premier-job-de-test:
+    # Définit le type de machine virtuelle sur laquelle le job sera exécuté.
+    runs-on: ubuntu-latest
+
+    # Donne la liste des étapes à effectuer dans le job mon-premier-job-de-test.
+    steps:
+      - name: Afficher un message
+        run: echo "La pipeline Github Actions fonctionne correctement !"  # echo est une commande bash qui affiche un message dans les logs.
